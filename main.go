@@ -36,6 +36,8 @@ func main() {
 			continue
 		} else if nextStep == "M" {
 			moveRobot(position, plane, &x, &y)
+		} else {
+			log.Fatal("Command is invalid")
 		}
 	}
 	fmt.Println("Test Output:")
