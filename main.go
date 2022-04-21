@@ -25,7 +25,7 @@ func main() {
 	}
 
 	if x >= len(plane) || y >= len(plane[x]) {
-		log.Fatal("Robot starting position is not with the rectangular plane")
+		log.Fatal("Robot starting position is not within the rectangular plane")
 	}
 	plane[x][y] = "*"
 	chars := []rune(path)
